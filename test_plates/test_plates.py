@@ -28,6 +28,9 @@ def test_punctuation():
     assert is_valid('AA.178') == False
     assert is_valid('AABC,') == False
 
+def test_length():
+    assert is_valid("A") == False
+    assert is_valid("ABCDEFG") == False
 
 if __name__ == "__main__":
     main()
